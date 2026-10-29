@@ -1,0 +1,2 @@
+# ZnsNotificationRules
+Demo zns sample
