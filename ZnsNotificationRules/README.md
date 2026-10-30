@@ -13,7 +13,6 @@ Thu vien cho cac loai tin ZNS cat/bam seal (PAYMENT, APPROVE, REJECT, COMPLETE, 
 | `Rules/` | `.Rules` | Rule cu the: Payment, Approve, Reject, Complete, Cancel. Moi rule tu truy van va tong hop ho so rieng (`FetchPending`) | Concrete Strategy |
 | `Engine/` | `.Engine` | `ZnsNotificationEngine`: Enqueue (ghi hang doi) va Dispatch (gui, danh dau) | Orchestrator |
 | `Factory/` | `.Factory` | `ZnsRuleCatalog.Create()`: noi tao va dang ky rule | Factory / Registry |
-| `Simulation/` | `.Simulation` | Cong gia lap (hien tai: `SimulatedRecipientResolver`) | Test double |
 
 Phu thuoc chi di mot chieu: `Engine` -> `Contracts`, `Models`; `Factory` -> `Rules` -> `Rules.Base` -> `Contracts`, `Models`, `Formatting`.
 
